@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cre: mkoch</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: linear-gradient(to bottom right, #ff9ec4, #ffd6ec);
+      overflow: hidden;
+      color: white;
+    }
+
+    .fade-out {
+      opacity: 1;
+      transition: opacity 0.8s ease-out;
+    }
+
+    .fade-out.hidden {
+      opacity: 0;
+    }
+
+    .stars {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: url('https://media.discordapp.net/attachments/1379317837503402005/1379317907338559508/IMG_2.jpg?ex=68942d67&is=6892dbe7&hm=bba74b3d354858f55c9b66647efa2eb85d20bc2104e8d3f0eadeb5079b9f105c&=&format=webp&width=634&height=860') repeat;
+      animation: twinkle 30s linear infinite;
+      z-index: 0;
+      opacity: 0.5;
+      background-size: 20%;
+    }
+
+    @keyframes twinkle {
+      0% { background-position: 0 0; }
+      100% { background-position: 2000px 2000px; }
+    }
+
+    .container {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: row;
+      gap: 40px;
+      padding: 40px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 30px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      backdrop-filter: blur(10px);
+    }
+
+    .avatar {
+      width: 200px;
+      height: 200px;
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 20px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      color: white;
+      font-weight: bold;
+      overflow: hidden;
+    }
+
+    .avatar img {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+
+    .pass-box {
+      text-align: center;
+    }
+
+    .pass-box h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: white;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+    }
+
+    .input-field {
+      padding: 12px;
+      font-size: 22px;
+      border: none;
+      border-radius: 12px;
+      width: 200px;
+      text-align: center;
+      margin-bottom: 20px;
+      background: white;
+      color: #ff66a5;
+      font-weight: bold;
+    }
+
+    .keypad {
+      display: grid;
+      grid-template-columns: repeat(3, 60px);
+      gap: 10px;
+      justify-content: center;
+    }
+
+    .key {
+      background: white;
+      color: #ff66a5;
+      border-radius: 12px;
+      font-size: 22px;
+      font-weight: bold;
+      padding: 15px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      transition: transform 0.1s ease-in-out;
+    }
+
+    .key:hover {
+      background-color: #ffe2f0;
+    }
+
+    .key:active {
+      transform: scale(0.95);
+    }
+
+    .action {
+      grid-column: span 3;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 15px;
+    }
+
+    .btn-clear, .btn-submit {
+      padding: 10px 20px;
+      font-size: 24px;
+      border: none;
+      border-radius: 50%;
+      background-color: #ff66a5;
+      color: white;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      transition: background 0.3s;
+    }
+
+    .btn-clear:hover, .btn-submit:hover {
+      background-color: #ff3c8a;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+      }
+
+      .avatar {
+        width: 150px;
+        height: 150px;
+        margin: 0 auto;
+      }
+
+      .keypad {
+        grid-template-columns: repeat(3, 60px);
+      }
+
+      .input-field {
+        width: 180px;
+        font-size: 20px;
+      }
+
+      .stars {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: url('https://cdn.discordapp.com/attachments/1379317837503402005/1379317907338559508/IMG_2.jpg?ex=683fcd67&is=683e7be7&hm=4acbb00ea0f40217061291fbe725f4c01a500f2322349301a9a6a491f6d1232f&') repeat;
+      animation: twinkle 40s linear infinite;
+      z-index: 0;
+      opacity: 0.5;
+      background-size: 50%;
+    }
+
+    }
+  </style>
+</head>
+<body class="fade-out">
+  <div class="stars"></div>
+  <div class="container">
+    <div class="avatar">
+      <img src="/img/IMG_1.1.jpg" alt="avatar ">
+      my baebii😘
+    </div>
+    <div class="pass-box">
+      <h1>Sinh Nhật Yến Nhi😊</h1>
+      <input type="text" class="input-field" id="pass" readonly>
+      <div class="keypad">
+        <div class="key" onclick="appendNum('1')">1</div>
+        <div class="key" onclick="appendNum('2')">2</div>
+        <div class="key" onclick="appendNum('3')">3</div>
+        <div class="key" onclick="appendNum('4')">4</div>
+        <div class="key" onclick="appendNum('5')">5</div>
+        <div class="key" onclick="appendNum('6')">6</div>
+        <div class="key" onclick="appendNum('7')">7</div>
+        <div class="key" onclick="appendNum('8')">8</div>
+        <div class="key" onclick="appendNum('9')">9</div>
+        <div class="key" onclick="clearPass()">X</div>
+        <div class="key" onclick="appendNum('0')">0</div>
+        <div class="key" onclick="submitPass()">✔</div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+  const correctPass = "090805";
+  const redirectURL = "/web/letter.html";
+
+  // Tạo các đối tượng âm thanh
+  const clickSound = new Audio('/sound/click.mp3');
+  const errorSound = new Audio('/sound/error.m4a');
+
+  function playSound(sound) {
+    sound.currentTime = 0; // Đặt lại thời gian phát
+    sound.play();
+  }
+
+  function appendNum(num) {
+    const input = document.getElementById('pass');
+    if (input.value.length < 6) {
+      input.value += num;
+      playSound(clickSound); // Phát âm thanh khi nhấn nút
+    }
+  }
+
+  function clearPass() {
+    document.getElementById('pass').value = '';
+    playSound(clickSound); // Phát âm thanh khi nhấn nút X
+  }
+
+  function submitPass() {
+    const pass = document.getElementById('pass').value;
+    if (pass === correctPass) {
+      document.body.classList.add('hidden');
+      setTimeout(() => {
+        window.location.href = redirectURL;
+      }, 800);
+    } else {
+      alert('sai rui vk oiiii😊');
+      playSound(errorSound); // Phát âm thanh khi nhập sai mật khẩu
+    }
+  }
+
+  window.onload = () => {
+    document.body.classList.remove('hidden');
+  };
+  </script>
+</body>
+</html>

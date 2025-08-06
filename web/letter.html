@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>heart letter by alexx_deev</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+  
+<div class="envlope-wrapper">
+    <div id="envelope" class="close">
+        <div class="front flap"></div>
+        <div class="front pocket"></div>
+        <div class="letter">
+            <div class="xin chào"></div>
+            <div class="words line2"></div>
+            <div class="words line3"></div>
+            <div class="words line4"></div>
+        </div>
+        <div class="hearts">
+            <div class="heart a1"></div>
+            <div class="heart a2"></div>
+            <div class="heart a3"></div>
+            <div class="heart a4"></div>
+            <div class="heart a5"></div>
+        </div>
+    </div>
+  <button id="surpriseButton" class="heartbeat" style="display: none; position: fixed; top: 50%; right: 20px; transform: translateY(-50%); padding: 12px 16px; background-color: #ff4081; border: none; border-radius: 50%; cursor: pointer; z-index: 10000;">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12 21s-7-4.35-7-10A5 5 0 0 1 12 6a5 5 0 0 1 7 5c0 5.65-7 10-7 10z"/>
+    </svg>
+  </button>
+  <style>
+    .heartbeat {
+      animation: heartbeat 1s infinite;
+    }
+    @keyframes heartbeat {
+      0%, 100% {
+        transform: scale(1) translateY(-50%);
+      }
+      10% {
+        transform: scale(1.1) translateY(-50%);
+      }
+      20% {
+        transform: scale(1.2) translateY(-50%);
+      }
+      30% {
+        transform: scale(1.1) translateY(-50%);
+      }
+      40% {
+        transform: scale(1) translateY(-50%);
+      }
+    }
+  </style>
+  <button id="navigateButton" style="display: none; position: fixed; bottom: 20px; right: 20px; padding: 10px 20px; background-color: #ff4081; color: white; border: none; border-radius: 5px; cursor: pointer; z-index: 10000;">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+      <path d="M8 5l8 7-8 7" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+</button>
+</div>
+
+<audio id="backgroundMusic" autoplay loop>
+  <source src="https://cdn.discordapp.com/attachments/1379317837503402005/1402709074889543802/ssvid.net--seasons.mp3?ex=6894e620&is=689394a0&hm=005dbb1e557266c6d5216b50b4cd325cb6525137fa537158f229b47f836f7ccc&" type="audio/mpeg">
+</audio>
+   
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+  <script  src="./script.js"></script>
+
+</body>
+</html>
