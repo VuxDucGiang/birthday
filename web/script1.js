@@ -1187,7 +1187,7 @@ function startCameraAnimation() {
 
   function animatePath() {
     // progress += 0.001010;
-    progress += 0.0025;
+    progress += 0.0013;
     let newPos;
 
     if (progress < duration1) {
