@@ -416,6 +416,7 @@ body:not(.landscape-warning-active) #container canvas {
   20% { transform: rotate(18deg); }
   40% { transform: rotate(-18deg); }
   100% { transform: rotate(-18deg); }
+}
 >>>>>>> 9502ce0db30f9420a500a663222084659d2848f2
 /* There is a merge conflict marker in your CSS. Remove the lines starting with <<<<<<<, =======, >>>>>>>. The code below is the cleaned version: */
 
