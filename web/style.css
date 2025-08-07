@@ -479,3 +479,38 @@ button:hover {
   transform-origin: 25vw -3vh;
   box-shadow: 40vmin 0 5.196265905749415vmin currentColor;
 }
+/* CSS cho màn hình điện thoại */
+@media (max-width: 768px) {
+    .letter img {
+        max-width: 120% !important;
+        width: 120% !important;
+        height: auto !important;
+        object-fit: contain;
+    }
+    
+    /* Điều chỉnh các animation state cho mobile */
+    .letter img.animate {
+        transform: translateY(-200px) scale(1.4) !important;
+    }
+    
+    .letter img.return {
+        transform: translateY(-170px) scale(1.8) !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .letter img {
+        max-width: 150% !important;
+        width: 150% !important;
+        height: auto !important;
+        object-fit: contain;
+    }
+    
+    .letter img.animate {
+        transform: translateY(-200px) scale(1.6) !important;
+    }
+    
+    .letter img.return {
+        transform: translateY(-170px) scale(2.0) !important;
+    }
+}
