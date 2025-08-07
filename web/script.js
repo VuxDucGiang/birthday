@@ -35,7 +35,7 @@ $(document).ready(function () {
 
         // Thay đổi nội dung thư thành một bức ảnh
         const letterContent = document.querySelector('.letter');
-        letterContent.innerHTML = '<img src="img/Letter.jpg" alt="Bức ảnh bí mật" class="animate" style="max-width: 100%; border-radius: 10px;">';
+        letterContent.innerHTML = '<img src="./img/Letter.jpg" alt="Bức ảnh bí mật" class="animate" style="max-width: 100%; border-radius: 10px;">';
 
         // Thêm hiệu ứng di chuyển sau khi ảnh được thêm
         setTimeout(() => {
