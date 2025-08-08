@@ -145,7 +145,6 @@ $(document).ready(function () {
         './img/emnhi/pic4.jpg',
         './img/emnhi/pic6.jpg',
         './img/emnhi/pic7.png',
-        // './img/emnhi/pic8.jpg',
         './img/emnhi/pic9.png',
         './img/emnhi/pic10.png',      
         './img/emnhi/pic11.jpg', 
