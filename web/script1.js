@@ -834,7 +834,7 @@ let galaxyAudio = null;
 
 function preloadGalaxyAudio() {
   const audioSources = [
-   "https://cdn.discordapp.com/attachments/1379317837503402005/1402701613860126941/sinh_nhat.MP3?ex=6894df2d&is=68938dad&hm=d52577a43c6f421715e9e4f8646ec04a79911d53ad6c4c6e95bef96b2adeef56&"
+   "./sound/galaxy.mp3",
   ];
 
   const randomIndex = Math.floor(Math.random() * audioSources.length);
