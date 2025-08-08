@@ -85,13 +85,13 @@ const galaxyParameters = {
 };
 
 const heartImages = [
-           './img/emnhi/pic14.jpg',
+           './img/emnhi/pic2.jpg',
+        './img/emnhi/pic4.jpg',
+        './img/emnhi/pic6.jpg',
+        './img/emnhi/pic7.png',
+        './img/emnhi/pic10.png',
+        './img/emnhi/pic13.png',
         './img/emnhi/pic15.jpg',
-        './img/emnhi/pic16.jpg',
-        './img/emnhi/pic17.jpg',
-        './img/emnhi/pic18.jpg',
-        './img/emnhi/pic19.jpg',
-        './img/emnhi/pic20.jpg',
         './img/emnhi/pic21.png',
         './img/emnhi/pic22.jpg',
         './img/emnhi/pic23.jpg',
