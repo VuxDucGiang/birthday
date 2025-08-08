@@ -140,27 +140,17 @@ $(document).ready(function () {
 
     // Placeholder array for photoUrls
     const photoUrls = [
-        './img/emnhi/pic1.jpg',
-        './img/emnhi/pic2.jpg', 
+           './img/emnhi/pic2.jpg',
         './img/emnhi/pic4.jpg',
         './img/emnhi/pic6.jpg',
         './img/emnhi/pic7.png',
-        './img/emnhi/pic9.png',
-        './img/emnhi/pic10.png',      
-        './img/emnhi/pic11.jpg', 
-        './img/emnhi/pic12.jpg',
+        './img/emnhi/pic10.png',
         './img/emnhi/pic13.png',
-        // './img/emnhi/pic14.jpg',
-        // './img/emnhi/pic15.jpg',
-        // './img/emnhi/pic16.jpg',
-        // './img/emnhi/pic17.jpg',
-        // './img/emnhi/pic18.jpg',
-        // './img/emnhi/pic19.jpg',
-        // './img/emnhi/pic20.jpg',
-        // './img/emnhi/pic21.png',
-        // './img/emnhi/pic22.jpg',
-        // './img/emnhi/pic23.jpg',
-        // './img/emnhi/pic24.jpg',
+        './img/emnhi/pic15.jpg',
+        './img/emnhi/pic21.png',
+        './img/emnhi/pic22.jpg',
+        './img/emnhi/pic23.jpg',
+        './img/emnhi/pic24.jpg',
     ];
 
     // Placeholder function for shootHeartImages
